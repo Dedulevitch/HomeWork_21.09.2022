@@ -7,18 +7,30 @@ internal partial class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Напишите число ");
-        int num = int.Parse(Console.ReadLine()); 
-    
-     for (int i = 0; i < num; i++);
+       Console.WriteLine("Напишите число ");
+        int limit = int.Parse(Console.ReadLine());
+        int count = 999;
 
-        if ()
+        while (count < limit)
         {
-            Console.WriteLine(num[2]);
+            limit = limit / 10;
+        }
+        /* int result = limit % 10; */
+        /* Console.WriteLine(limit); */
+        if (limit < 99)
+        {
+            Console.WriteLine("Такой цифры нету");
         }
         else
         {
-            Console.WriteLine("Третьей цифры нет");
-        } */
+            Console.WriteLine(limit % 10);
+        }
     }
+
 }
+
+
+
+
+
+
